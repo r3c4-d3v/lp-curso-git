@@ -106,4 +106,5 @@
     letter-spacing: -1px;
     z-index: 1;
     position: relative;
+    user-select: none;
 }
