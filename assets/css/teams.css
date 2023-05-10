@@ -1,0 +1,108 @@
+#home .team {
+    width: 100%;
+    padding-bottom: clamp(5rem, 5vw, 15rem);
+}
+
+#home .team-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#home .team-container .cards-container {
+    display: flex;
+    gap: 3.75rem 1.875rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#home .cards-container .card {
+    position: relative;
+}
+
+@media (max-width: 767px) {
+    #home .cards-container .card {
+        width: 100%;
+        max-height: 31.25rem;
+    }
+
+    #home .cards-container .card:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+}
+
+#home .card:hover .cards-container .card .infos-hover {
+    display: flex;
+}
+
+#home .cards-container .card .image {
+    display: block;
+    width: 100%;
+    max-width: 21.25rem;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.375rem;
+}
+
+@media (max-width: 767px) {
+    #home .cards-container .card .image {
+        width: 100%;
+        max-width: initial;
+    }
+}
+
+#home .cards-container .card .infos {
+    display: flex;
+    visibility: visible;
+    flex-direction: column;
+    text-align: center;
+    pointer-events: none;
+}
+
+#home .cards-container .card .infos-hover {
+    display: none;
+    flex-direction: column;
+    gap: 0.625rem;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 6px;
+    background-image: var(--gradient-primary-transparent);
+    color: var(--color-font-light);
+}
+
+#home .cards-container .card:hover > .infos {
+    visibility: hidden;
+}
+
+#home .cards-container .card:hover > .infos-hover {
+    display: flex;
+}
+
+#home .cards-container .card .infos .name {
+    text-transform: capitalize;
+    font-weight: 800;
+    font-size: 1.125rem;
+    padding-top: 3px;
+}
+
+#home .cards-container .card .infos .role {
+    color: var(--color-font-light-grey);
+}
+
+#home .cards-container .card .infos-hover .name {
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+#home .cards-container .card .infos-hover .social-media {
+    display: flex;
+    column-gap: 0.75rem;
+}
+
+#home .cards-container .card .infos-hover .social-media .fa-brands {
+    color: var(--color-font-light);
+}
