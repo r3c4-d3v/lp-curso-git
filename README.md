@@ -53,3 +53,5 @@ Aponta para o repositório no github
 ```
 git remote add origin git@github.com:r3c4-d3v/lp-curso-git.git
 ```
+
+Esta linha é apenas para criarmos mais um commit
