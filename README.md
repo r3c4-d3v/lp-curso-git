@@ -49,6 +49,11 @@ Cria uma nova branch e efetua a troca para essa branch
 git checkout -b nome-da-branch
 ```
 
+Efetua a troca para e branch designada
+```
+git checkout nome-da-branch
+```
+
 Aponta para o repositório no github
 ```
 git remote add origin git@github.com:r3c4-d3v/lp-curso-git.git
