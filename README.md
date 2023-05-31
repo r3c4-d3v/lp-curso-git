@@ -29,6 +29,11 @@ inicializa o git na pasta que o comando for executado
 git init
 ```
 
+Aponta para o repositório no github
+```
+git remote add origin git@github.com:r3c4-d3v/lp-curso-git.git
+```
+
 adiciona os arquivos selecionados
 ```
 git add nome_do_arquivo nome-do-outro-arquivo
@@ -52,11 +57,6 @@ git checkout -b nome-da-branch
 Efetua a troca para e branch designada
 ```
 git checkout nome-da-branch
-```
-
-Aponta para o repositório no github
-```
-git remote add origin git@github.com:r3c4-d3v/lp-curso-git.git
 ```
 
 Esta linha é apenas para criarmos mais um commit
