@@ -9,4 +9,5 @@ html {
     font-family: "Open Sans", sans-serif;
     font-weight: normal;
     color: var(--color-font-dark);
+    scroll-behavior: smooth;
 }
