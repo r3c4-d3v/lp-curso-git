@@ -54,7 +54,7 @@ Cria uma nova branch e efetua a troca para essa branch
 git checkout -b nome-da-branch
 ```
 
-Efetua a troca para e branch designada
+Efetua a troca para a branch designada
 ```
 git checkout nome-da-branch
 ```
